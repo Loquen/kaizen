@@ -36,6 +36,10 @@ body {
   padding: 10px;
 }
 
+.nav .active {
+  background-color: #ddd;
+  color: black;
+}
 
 /* heading */
 .heading {
@@ -99,11 +103,8 @@ body {
   font-family: 'DM Serif Display', serif;
 }
 
-.different {
+.section {
   text-align: center;
-  background-image: url('./images/bg-pattern-intro-right-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: right -100px;
 }
 
 .different-title {
@@ -117,11 +118,11 @@ body {
 }
 
 .card {
-  padding: 20px;
+  padding: 30px;
 }
 
-.rec {
-
+.rec .info {
+  text-align: left;
 }
 
 .action {
@@ -363,6 +364,17 @@ hr {
     padding: 10px 0 5 0;
   }
 }
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  background-color: hsl(0, 0%, 98%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
 /* 
 ## Colors
 
