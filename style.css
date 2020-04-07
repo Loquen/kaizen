@@ -60,10 +60,17 @@ body {
 
 .heading-title {
   font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
 }
 
 .heading-body {
   padding: 20px;
+}
+
+.limited {
+    font-size: 2rem;
+    color: white;
 }
 
 .view-button {
@@ -77,7 +84,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.5rem;
   width: 50%;
 }
 
