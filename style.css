@@ -127,7 +127,9 @@ body {
 }
 
 .card {
+  margin: 20px;
   padding: 30px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, .3);
 }
 
 .rec .info {
@@ -225,7 +227,7 @@ hr {
   padding: 8px;
 }
 
-/* Mobile Pages */
+/* Mobile About */
 .about {
   text-align: center;
 }
@@ -238,7 +240,6 @@ hr {
   padding: 10px;
 }
 
-
 .subscribe {
   padding: 50px 0;
   font-size: 20px;
@@ -248,6 +249,21 @@ hr {
 
 }
 
+/* Mobile Services */
+.price {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.services.card-list {
+  font-size: 20px;
+}
+
+/* Images */
+
+.image-section .img img{
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child) {
@@ -330,7 +346,6 @@ hr {
 
   .rec {
     text-align: left;
-    margin: auto;
     width: 75%;
     padding-bottom: 100px;
   }
@@ -343,6 +358,13 @@ hr {
   .card-list {
     display: flex;
   }
+
+  .services.card-list {
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+
 
   .action {
     padding-left: 0;
@@ -446,6 +468,16 @@ hr {
     color: white;
     background-color: hsl(256, 26%, 20%);
   
+  }
+
+  /* Desktop Images */
+  .image-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+  }
+  .image-section .img img{
+    max-height: 300px;
   }
 }
 
