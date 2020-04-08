@@ -22,7 +22,7 @@ body {
 }
 
 .nav a:hover {
-  background-color: black;
+  background-color: hsl(256, 26%, 20%);;
   color: #ddd;
 }
 
@@ -37,8 +37,8 @@ body {
 }
 
 .nav .active {
-  background-color: #ddd;
-  color: black;
+  background-color: hsl(256, 18%, 48%);
+  color: white;
 }
 
 /* heading */
@@ -49,7 +49,7 @@ body {
   justify-content: center;
   text-align: center;
   /* background-color: hsl(256, 26%, 20%); */
-  color: hsl(256, 26%, 20%);;
+  color: hsl(256, 26%, 20%);
   background-image: url('./images/shapelined.jpg');
   background-size: cover;
   padding: 50px 0;
@@ -87,8 +87,8 @@ body {
 
 .view-button {
   background-color: hsl(256, 26%, 20%);
-  /* border: 2px solid white ; */
-  border: none;
+  border: 2px solid white ;
+  /* border: none; */
   border-radius: 3px;
   color: white;
   padding: 15px 32px;
@@ -97,6 +97,15 @@ body {
   text-transform: uppercase;
   display: inline-block;
   font-size: 1.5rem;
+}
+
+.sell .view-button {
+  border: none;
+}
+
+.view-button:hover {
+  background-color: hsl(255, 18%, 35%);
+  color: white;
 }
 
 .title {
@@ -239,6 +248,7 @@ hr {
 
 }
 
+
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child) {
     display: none;
@@ -283,8 +293,9 @@ hr {
     justify-content: space-evenly;
     text-align: left;
     padding: 100px 170px;
-    height: 600px;
-    margin-bottom: 200px;
+    height: 800px;
+    background-position: center;
+    /* margin-bottom: 200px; */
    
   }
 
@@ -299,11 +310,11 @@ hr {
   .heading-content .view-button {
     width: 30%;
   }
-/* 
-  .heading-image img {
-    display: block;
-  } */
 
+  .section {
+    width: 75%;
+    margin: auto;
+  }
   /* Desktop Different */
   .different .hr {
     width: 200px;
@@ -341,18 +352,14 @@ hr {
     width: 75%;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-image: url('./images/bg-pattern-intro-right-desktop.svg');
-    background-repeat: no-repeat;
-    background-position: right;
   }
 
   .call-to-action .view-button {
-    background-color: transparent;
     padding: 20px;
-    width: 25%;
-    margin-right: 50px;
+    width: 100%;
+    margin-right: 70px;
   }
 
   .call {
@@ -402,6 +409,43 @@ hr {
   }
   .footer a {
     padding: 0;
+  }
+
+  /* Desktop About */
+  .about {
+    width: 75%;
+    margin: auto;
+  }
+
+  .about-heading-body {
+    display: flex;
+    padding: 20px;
+  }
+  .profile-pic { 
+    padding: 20px;
+  }
+  .profile-pic img {
+    width: 100%;
+  }
+  .about-content {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .subscribe .call {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  
+  .subscribe {
+    padding: 50px 0;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: hsl(256, 26%, 20%);
+  
   }
 }
 
