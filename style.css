@@ -152,14 +152,18 @@ body {
 /* footer */
 .footer {
   text-align: center;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   background-color: hsl(0, 0%, 98%);
-  margin-top: 100px;
 }
 
 .footer-heading {
-  padding-top: 60px;
-  margin-bottom: 50px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-card-list {
+  padding-top: 20px;
 }
 
 .footer a {
@@ -196,7 +200,7 @@ hr {
 }
 
 .footer-card {
-  padding: 20px;
+  padding: 10px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -210,6 +214,29 @@ hr {
 
 .footer-item {
   padding: 8px;
+}
+
+/* Mobile Pages */
+.about {
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 100%;
+}
+.about-content {
+  text-align: left;
+  padding: 10px;
+}
+
+
+.subscribe {
+  padding: 50px 0;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: hsl(256, 26%, 20%);
+
 }
 
 @media screen and (max-width: 600px) {
