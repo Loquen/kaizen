@@ -204,10 +204,14 @@ hr {
 .footer-social {
   padding: 30px;
   color: hsl(273, 4%, 51%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-social i {
   padding: 0 5px;
+  
 }
 
 .footer-card {
@@ -410,6 +414,10 @@ hr {
     padding-right: 0;
   }
 
+  .footer-email {
+    padding-right: 10px;
+  }
+
   .footer hr {
     width: 75%;
   }
@@ -479,6 +487,7 @@ hr {
   .image-section .img img{
     max-height: 300px;
   }
+
 }
 
 
