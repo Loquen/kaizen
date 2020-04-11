@@ -5,8 +5,32 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: 'Karla', sans-serif;
+  height: 100%;
 }
 
+.coming-soon {
+  height: 100vmin;
+  background-image: url('./images/shapelined.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'DM Serif Display';
+}
+
+.subtext {
+  font-size: 30px;
+  font-weight: 700;
+}
 /* nav */ 
 .nav {
   overflow: hidden;
@@ -146,11 +170,9 @@ body {
   background-color: hsl(256, 26%, 20%);
   color: white;
   text-align: center;
-  margin: auto;
+  margin: 100px auto;
   padding: 40px 0 100px 0;
-  background-image: url('./images/bg-pattern-intro-right-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: right;
+  
 }
 
 .call {
@@ -492,7 +514,6 @@ hr {
 
 
 .attribution { 
-  font-size: 11px; 
   text-align: center; 
   background-color: hsl(0, 0%, 98%);
 }
