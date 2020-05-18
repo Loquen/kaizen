@@ -126,6 +126,10 @@ body {
   margin: auto;
 }
 
+.content.bold {
+  font-size: 1.5rem;
+}
+
 .card {
   margin: 20px;
   padding: 30px;
