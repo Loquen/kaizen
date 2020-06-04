@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+/*
+
+Light Grey #DEDEDE
+Pink #FF5A7C
+Orange #FF9554
+Blue #3559B3
+Teal #56EBAA
+Charcoal #262223 
+
+*/
+
 body {
   box-sizing: border-box;
   margin: 0;
   font-family: 'Karla', sans-serif;
+  color: #262223;
 }
 
 /* nav */ 
@@ -49,7 +61,7 @@ body {
   justify-content: center;
   text-align: center;
   /* background-color: hsl(256, 26%, 20%); */
-  color: hsl(256, 26%, 20%);
+  /* color: hsl(256, 26%, 20%); */
   background-image: url('./images/shapelined.jpg');
   background-size: cover;
   padding: 50px 0;
@@ -57,7 +69,6 @@ body {
 
 .heading-content {
   padding: 50px 20px;
-  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -70,6 +81,11 @@ body {
 
 .heading-body {
   padding: 20px;
+}
+
+.subtext {
+  padding-top: 20px;
+  font-size: 1.25rem;
 }
 
 .sell {
@@ -86,9 +102,9 @@ body {
 }
 
 .view-button {
-  background-color: hsl(256, 26%, 20%);
-  border: 2px solid white ;
-  /* border: none; */
+  background-color: #3559B3;
+  /* border: 2px solid white ; */
+  border: none;
   border-radius: 3px;
   color: white;
   padding: 15px 32px;
@@ -97,6 +113,7 @@ body {
   text-transform: uppercase;
   display: inline-block;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .sell .view-button {
@@ -104,12 +121,14 @@ body {
 }
 
 .view-button:hover {
-  background-color: hsl(255, 18%, 35%);
+  background-color: rgba(53, 89, 179, 0.664);
   color: white;
 }
 
 .title {
-  font-family: 'DM Serif Display', serif;
+  font-weight: bold;
+  /* font-family: Arial, Helvetica, sans-serif; */
+
 }
 
 .section {
@@ -130,10 +149,29 @@ body {
   font-size: 1.5rem;
 }
 
+.text-container {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  color: #dedede;
+}
+
 .card {
   margin: 20px;
-  padding: 30px;
+  padding: 40px 30px;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, .3);
+}
+
+.stadium {
+  background-image: url('./images/stadium.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.boy {
+  background-image: url('./images/boyandgoal.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .rec .info {
@@ -141,7 +179,7 @@ body {
 }
 
 .action {
-  font-size: 28px;
+  font-size: 35px;
   padding: 20px;
 }
 
@@ -325,10 +363,16 @@ hr {
 
   .heading-body {
     padding-left: 0;
+    width: 70%;
+    margin: auto;
   }
 
   .heading-image {
     width: 80%;
+  }
+
+  .heading-content {
+    padding: 0;
   }
 
   .heading-content .view-button {
@@ -365,6 +409,7 @@ hr {
 
   .card-list {
     display: flex;
+    margin-bottom: 50px;
   }
 
   .services.card-list {
@@ -376,6 +421,10 @@ hr {
 
   .action {
     padding-left: 0;
+  }
+
+  .action.title{
+    padding: 0;
   }
   /* Desktop Call to Action */
   .call-to-action {
