@@ -27,14 +27,16 @@ body {
 .nav a {
   color: hsl(256, 26%, 20%);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px 10px;
   text-decoration: none;
+  font-size: 1.75rem;
+  vertical-align: center;
   float: left;
-  display: block;
+  /* display: block; */
 }
 
 .nav a:hover {
-  background-color: hsl(256, 26%, 20%);;
+  /* background-color: hsl(256, 26%, 20%);; */
   color: #ddd;
 }
 
@@ -43,9 +45,16 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+.nav .logo {
+  display: inline;
+}
+.nav  img {
+  height: 40px;
+}
 
 .nav-item {
   padding: 10px;
+  font-size: 2rem;
 }
 
 .nav .active {
@@ -67,24 +76,34 @@ body {
   padding: 50px 0;
 }
 
+.kaizen-academy {
+  height: 220px;
+}
+
+.kaizen-academy img {
+  width: 40%;
+}
+
 .heading-content {
   padding: 50px 20px;
-  margin: 0 auto;
+  margin: -30px auto;
   text-align: center;
 }
 
 .heading-title {
-  font-size: 50px;
+  font-size: 35px;
   text-transform: uppercase;
   letter-spacing: .3rem;
+  color: white;
+  padding-bottom: 20px;
 }
 
 .heading-body {
-  padding: 20px;
+  padding: 40px;
 }
 
 .subtext {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   font-size: 1.25rem;
 }
 
@@ -102,7 +121,7 @@ body {
 }
 
 .view-button {
-  background-color: #3559B3;
+  background-color: #FF5A7C;
   /* border: 2px solid white ; */
   border: none;
   border-radius: 3px;
@@ -116,12 +135,24 @@ body {
   font-weight: bold;
 }
 
+.view-button.hero-button {
+  background-color: #ff9554;
+}
+
+.view-button.hero-button:hover {
+  background-color: #56EBAA;
+  color: #262223;
+  transition: 0.75s;
+  cursor: pointer;
+}
+
 .sell .view-button {
   border: none;
 }
 
 .view-button:hover {
-  background-color: rgba(53, 89, 179, 0.664);
+  background-color: rgba(53, 89, 179);
+  transition: 0.75s;
   color: white;
 }
 
@@ -174,6 +205,32 @@ body {
   background-size: cover;
 }
 
+.call-form {
+  padding: 20px;
+}
+
+.about-container {
+  display: flex;
+  margin-top: 100px;
+  background-color: #dedede;
+}
+
+.content-container {
+  padding: 20px 30px 5px;
+}
+
+.content-container .content {
+  padding: 10px;
+  text-align: left;
+}
+
+.about-img {
+  /* width: 50%; */
+}
+
+.about-img img {
+  width: 100%;
+}
 .rec .info {
   text-align: left;
 }
@@ -185,7 +242,7 @@ body {
 
 .call-to-action {
   width: 90%;
-  background-color: hsl(256, 26%, 20%);
+  background-color: #3559B3;
   color: white;
   text-align: center;
   margin: auto;
@@ -193,6 +250,15 @@ body {
   background-image: url('./images/bg-pattern-intro-right-mobile.svg');
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.call-to-action .view-button {
+  background-color: #FF5A7C;
+}
+
+.call-to-action .view-button:hover {
+  background-color: rgba(255, 90, 123, 0.8);
+  transition: 0.75s;
 }
 
 .call {
@@ -352,17 +418,13 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     text-align: left;
-    padding: 100px 170px;
+    padding: 30px 170px;
     height: 800px;
     background-position: center;
-    /* margin-bottom: 200px; */
-   
   }
 
   .heading-body {
-    padding-left: 0;
     width: 70%;
     margin: auto;
   }
@@ -373,6 +435,7 @@ hr {
 
   .heading-content {
     padding: 0;
+    margin-bottom: 80px;
   }
 
   .heading-content .view-button {
@@ -439,6 +502,7 @@ hr {
     padding: 20px;
     width: 100%;
     margin-right: 70px;
+    background-color: #FF5A7C;
   }
 
   .call {
