@@ -19,6 +19,16 @@ body {
   color: #262223;
 }
 
+
+a, a:visited {
+  color: #3559B3; 
+  text-decoration: none;
+}
+
+a:hover, a:hover:visited {
+  color: #262223;
+}
+
 /* nav */ 
 .nav {
   overflow: hidden;
@@ -37,7 +47,7 @@ body {
 
 .nav a:hover {
   /* background-color: hsl(256, 26%, 20%);; */
-  color: #ddd;
+  color: #3559B3;
 }
 
 .nav-item-list {
@@ -58,7 +68,7 @@ body {
 }
 
 .nav .active {
-  background-color: hsl(256, 18%, 48%);
+  background-color: #3559B3;
   color: white;
 }
 
@@ -77,11 +87,11 @@ body {
 }
 
 .kaizen-academy {
-  height: 220px;
+  height: 100px;
 }
 
 .kaizen-academy img {
-  width: 40%;
+  width: 60%;
 }
 
 .heading-content {
@@ -110,7 +120,7 @@ body {
 .sell {
   display: flex;
   flex-direction: column;
-
+  width: 70%;
 }
 
 .limited {
@@ -142,8 +152,6 @@ body {
 .view-button.hero-button:hover {
   background-color: #56EBAA;
   color: #262223;
-  transition: 0.75s;
-  cursor: pointer;
 }
 
 .sell .view-button {
@@ -154,15 +162,16 @@ body {
   background-color: rgba(53, 89, 179);
   transition: 0.75s;
   color: white;
+  cursor: pointer;
 }
 
 .title {
   font-weight: bold;
-  /* font-family: Arial, Helvetica, sans-serif; */
-
 }
 
 .section {
+  width: 90%;
+  margin: auto;
   text-align: center;
 }
 
@@ -211,6 +220,7 @@ body {
 
 .about-container {
   display: flex;
+  flex-direction: column;
   margin-top: 100px;
   background-color: #dedede;
 }
@@ -245,7 +255,7 @@ body {
   background-color: #3559B3;
   color: white;
   text-align: center;
-  margin: auto;
+  margin: 50px auto;
   padding: 40px 0 100px 0;
   background-image: url('./images/bg-pattern-intro-right-mobile.svg');
   background-repeat: no-repeat;
@@ -268,17 +278,35 @@ body {
   margin: auto;
 }
 
+
+.rec-author .img {
+  /* width: 300px; */
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.rec-author .img img {
+  border-radius: 50%;
+  max-height: 100%;
+}
+
 /* footer */
 .footer {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
-  background-color: hsl(0, 0%, 98%);
+  background-color: #dedede;
 }
 
 .footer-heading {
   padding-top: 30px;
   margin-bottom: 30px;
+}
+
+.footer-heading img {
+  width: 90%;
 }
 
 .footer-card-list {
@@ -292,11 +320,11 @@ body {
 }
 
 .footer a:hover, .footer a:hover:visited {
-  color: hsl(256, 8%, 46%);
+  color: #3559B3;
 }
 
 .footer a:visited {
-  color: hsl(255, 30%, 23%);
+  color: #262223;
 }
 
 
@@ -377,7 +405,7 @@ hr {
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .nav a:not(:first-child) {
     display: none;
   }
@@ -419,9 +447,18 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: left;
-    padding: 30px 170px;
+    padding: 0 170px 100px;
     height: 800px;
     background-position: center;
+    margin-bottom: 20px;
+  }
+
+  .kaizen-academy {
+    height: 320px;
+  }
+  
+  .kaizen-academy img {
+    width: 40%;
   }
 
   .heading-body {
@@ -435,11 +472,19 @@ hr {
 
   .heading-content {
     padding: 0;
-    margin-bottom: 80px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .heading-content .view-button {
     width: 30%;
+  }
+
+  .sell {
+    margin: auto;
+    text-align: center;
+    width: auto;
   }
 
   .section {
@@ -462,7 +507,6 @@ hr {
   .rec {
     text-align: left;
     width: 75%;
-    padding-bottom: 100px;
   }
 
   .rec .hr {
@@ -519,12 +563,16 @@ hr {
   }
 
   .footer-heading {
-    width: 75%;
-    padding-top: 30px;
+    width: 70%;
+    padding: 30px 50px ;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer-heading img {
+    width: 20%;
   }
 
   .footer-social {
@@ -611,11 +659,11 @@ hr {
 .attribution { 
   font-size: 11px; 
   text-align: center; 
-  background-color: hsl(0, 0%, 98%);
+  background-color: #dedede;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%); 
+  color: #3559B3; 
 }
 
 /* 
