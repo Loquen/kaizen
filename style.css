@@ -101,11 +101,8 @@ a:hover, a:hover:visited {
 }
 
 .heading-title {
-  font-size: 35px;
   text-transform: uppercase;
-  letter-spacing: .3rem;
   color: white;
-  padding-bottom: 20px;
 }
 
 .heading-body {
@@ -167,6 +164,9 @@ a:hover, a:hover:visited {
 
 .title {
   font-weight: bold;
+  font-size: 45px;
+  letter-spacing: .3rem;
+  padding-bottom: 20px;
 }
 
 .section {
@@ -218,11 +218,49 @@ a:hover, a:hover:visited {
   padding: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type=submit] {
+  margin: 10px auto;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
   background-color: #dedede;
+}
+
+.single-page__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #dedede;
+}
+
+.single-page__img img {
+  width: 100%;
 }
 
 .content-container {
@@ -372,12 +410,21 @@ hr {
   text-align: center;
 }
 
+.single-page {
+  text-align: center;
+}
+
 .profile-pic img {
   width: 100%;
 }
 .about-content {
   text-align: left;
-  padding: 10px;
+  padding: 50px;
+}
+
+.single-page__content {
+  text-align: left;
+  padding: 50px;
 }
 
 .subscribe {
@@ -432,6 +479,20 @@ hr {
   }
 }
 
+.kaizen-page {
+  width: 90%;
+  margin: auto;
+}
+
+.kaizen-page .promo-video {
+  padding: 20px;
+}
+.kaizen-page iframe {
+  width: 100%;
+  margin: auto;
+}
+
+
 @media only screen and (min-width: 600px) {
   .nav {
     padding: 0 170px;
@@ -464,6 +525,10 @@ hr {
   .heading-body {
     width: 70%;
     margin: auto;
+  }
+  
+  .heading-body p {
+    font-size: 20px;
   }
 
   .heading-image {
@@ -612,19 +677,44 @@ hr {
     margin: auto;
   }
 
+  .kaizen-page iframe {
+    width: 70%;
+    height: 500px;
+  }
+
+  .single-page {
+    width: 75%;
+    margin: auto;
+  }
+
   .about-heading-body {
     display: flex;
     padding: 20px;
   }
-  .profile-pic { 
+
+  .single-page__heading-body {
+    display: flex;
     padding: 20px;
   }
+
+  .profile-pic { 
+    padding: 20px;
+    max-width: 400px;
+  }
+
   .profile-pic img {
     width: 100%;
   }
+
   .about-content {
     text-align: left;
-    padding: 10px;
+    width: 60%;
+  }
+
+  .single-page__content {
+    text-align: left;
+    width: 60%;
+    margin: auto;
   }
   
   .subscribe .call {
